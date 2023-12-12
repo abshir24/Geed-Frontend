@@ -3,7 +3,7 @@ import axios from "axios"
 const API = axios.create({baseUrl: process.env.REACT_APP_SERVER_URL})
 
 export const getRemedy = (ailment) =>{
-    console.log("API", API)
+    console.log(API.baseUrl)
     API.post(`remedy/getremedy`, { ailment: ailment })
 } 
 
