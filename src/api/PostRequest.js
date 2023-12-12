@@ -4,7 +4,7 @@ const API = axios.create({baseUrl: process.env.REACT_APP_SERVER_URL})
 
 export const getRemedy = (ailment) =>{
     console.log(API.baseUrl)
-    API.post(`remedy/getremedy`, { ailment: ailment })
+    return API.post(`remedy/getremedy`, { ailment: ailment })
 } 
 
 export const getHerb = (herbName) => API.get(`herb/getherb/${herbName}`)
