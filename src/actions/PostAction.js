@@ -1,8 +1,10 @@
 import * as PostsApi from "../api/PostRequest.js";
 
 export const getRemedy = (ailment) => async (dispatch) => {
+  console.log("START BACKEND DATA", ailment)
   dispatch({ type: "REQUEST_START" });
   try {
+    console.log("TRY BACKEND DATA", ailment)
     let { data } = await PostsApi.getRemedy(ailment);
     
     console.log("BACKEND DATA", data)
