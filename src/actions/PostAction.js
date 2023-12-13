@@ -5,6 +5,7 @@ export const getRemedy = (ailment) => async (dispatch) => {
   try {
     let { data } = await PostsApi.getRemedy(ailment);
     
+    console.log("BACKEND DATA", data)
     dispatch({ type: "REQUEST_SUCCESS", data: data });
   } catch (error) {
     console.log(error);
