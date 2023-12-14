@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API = axios.create({baseUrl: process.env.REACT_APP_SERVER_URL})
+const API = axios.create({baseUrl: 'https://daawoai-api.onrender.com'})
 
 export const getRemedy = (ailment) => API.post(`/remedy/getremedy`, { ailment: ailment })
 
