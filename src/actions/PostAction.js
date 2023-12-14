@@ -10,7 +10,7 @@ export const getRemedy = (ailment) => async (dispatch) => {
     console.log("BACKEND DATA", data)
     dispatch({ type: "REQUEST_SUCCESS", data: data });
   } catch (error) {
-    console.log(error);
+    console.log("ERROR",error);
     dispatch({ type: "REQUEST_FAIL" });
   }
 };
