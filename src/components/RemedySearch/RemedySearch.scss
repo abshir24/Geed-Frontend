@@ -138,13 +138,20 @@
 }
 
 @media (max-width: 1200px) {
+  .cards>div{
+    margin-bottom:20px
+  }
+ 
+  .gigCard{
+    margin-left:20px;
+  }
   .gig-search-bar{
-    width: 85%;
+    width: 100%;
     padding:0px;
   }
   
   .gig-search-bar > input{
-    width:50%;
+    width:60%;
     border: none;
     outline: none;
   }

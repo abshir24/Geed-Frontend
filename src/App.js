@@ -16,7 +16,6 @@ function App() {
           path="/"
           element={
             <div className="background"> 
-              <Header />
               <Hero />
             </div>
           }
