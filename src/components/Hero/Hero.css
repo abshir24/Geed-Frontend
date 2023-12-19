@@ -5,6 +5,7 @@
   z-index: 1;
   padding-bottom: 2rem;
   padding-top: 3rem;
+  height:100%
 }
 
 .hero-container {
@@ -15,16 +16,13 @@
 /* left side */
 .hero-left {
   gap: 3rem;
+  width:500px;
 }
-.hero-title {
-  position: relative;
-  z-index: -1;
+
+.daawo-image{
+  width:90%
 }
-.hero-title > h1 {
-  font-weight: 800;
-  font-size: 4.5rem;
-  line-height: 5.4rem;
-}
+
 .search-bar {
   background-color: white;
   border-radius: 5px;
@@ -62,42 +60,29 @@
     height: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .search-bar{
     width: 100%;
+    height: 60px;
     padding:0px;
   }
   
   .search-bar > input{
-    width:60%;
+    width:55%;
     border: none;
     outline: none;
   }
-}
 
-/* mobile screens */
-@media  (max-width: 640px){
+  .hero-search-button{
+    margin-right:5px;
+  }
+
   .hero-container{
     margin-top: 2rem;
   }
-  .hero-title>h1{
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
+ 
   .image-container{
-    width: 95%;
-    height: 25rem;
-  }
-  .stats{
-    justify-content: center;
-    gap: 1.5rem;
-    font-weight: wrap;
-  }
-  .stat>:nth-child(1){
-    font-size: 1.5rem;
-  }
-  .stat>:nth-child(2)
-  {
-    font-size: 0.8rem;
+    width: 92%;
+    height: 20rem;
   }
 }

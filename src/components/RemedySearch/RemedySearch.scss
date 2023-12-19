@@ -147,6 +147,7 @@
   }
   .gig-search-bar{
     width: 100%;
+    height: 60px;
     padding:0px;
   }
   
@@ -154,5 +155,9 @@
     width:60%;
     border: none;
     outline: none;
+  }
+
+  .search-button{
+    margin-right:5px;
   }
 }

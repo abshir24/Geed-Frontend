@@ -77,7 +77,7 @@ function RemedySearch() {
             required
             ref = {ailment}
           />
-          <button className="button" onClick={handleSubmit}>Search</button>
+          <button className="button search-button" onClick={handleSubmit}>Search</button>
         </div>
         <div className="cards">
           {

@@ -31,11 +31,8 @@ const Hero = () => {
         <div className="paddings innerWidth flexCenter hero-container">
             {/* left side */}
             <div className="flexColStart hero-left">
-                <div className="hero-title">
-                    <h1>Heal <br /> 
-                    the Natural <br/> Way</h1>
-                </div>
                 <div className="flexColStart herodesc">
+                    <img src="./daawo.png" className='daawo-image' alt="" />
                     <span className="secondaryText">
                     Please describe your ailment in as few words as possible.
                     </span>
@@ -49,7 +46,7 @@ const Hero = () => {
                     required
                     ref={ailment}
                   />
-                  <button className="button" onClick={handleSubmit}>Search</button>
+                  <button className="button hero-search-button" onClick={handleSubmit}>Search</button>
                 </div>
             </div>
             {/* right side */}
